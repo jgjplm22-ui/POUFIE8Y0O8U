@@ -1,0 +1,228 @@
+/* إعادة ضبط التنسيقات والخطوط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* القائمة العلوية */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar .logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* القسم الرئيسي */
+.hero-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+    color: #38bdf8;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0284c7;
+    color: #fff;
+}
+
+/* الأقسام العامة */
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.gray-bg {
+    background-color: #f1f5f9;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #0f172a;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: #38bdf8;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* كروت الخدمات */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* معرض الأعمال */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.portfolio-info p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* أزرار التواصل */
+.contact-desc {
+    margin-bottom: 25px;
+    color: #475569;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.social-btn.github { background-color: #333; }
+.social-btn.whatsapp { background-color: #25d366; }
+
+/* الفوتر */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
